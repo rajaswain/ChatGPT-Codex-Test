@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Basic Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Welcome to My Basic Website</h1>
+      <p>A clean starter page you can customize.</p>
+      <a class="button" href="#about">Learn More</a>
+    </header>
+
+    <main>
+      <section id="about" class="card">
+        <h2>About This Site</h2>
+        <p>
+          This is a simple static website with semantic HTML and a little CSS so
+          you can get started quickly.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Next Steps</h2>
+        <ul>
+          <li>Change the text and colors to match your style.</li>
+          <li>Add new sections like a portfolio or contact form.</li>
+          <li>Deploy it with GitHub Pages, Netlify, or Vercel.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> My Basic Website</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
